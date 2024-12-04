@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    margin: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc, green);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 100px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #35424a;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px 100px;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: lightblue;
+}
+
+.monke {
+    position: relative;
+    text-align: center;
+}
+/* Адаптивность */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    section {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
